@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://119.3.61.233:5432/question_service
+    username: postgres
+    password:
