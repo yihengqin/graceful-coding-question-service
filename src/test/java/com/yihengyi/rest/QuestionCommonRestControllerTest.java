@@ -28,9 +28,11 @@ class QuestionCommonRestControllerTest {
     @Test
     void should_return_ok_when_create_question() throws Exception {
         var questionId = "1";
-        BDDMockito.given(questionApplicationService.createQuestion(any())).willReturn(new QuestionCreatedResult(questionId));
+        BDDMockito.given(questionApplicationService.createQuestion(any()))
+                .willReturn(new QuestionCreatedResult(questionId));
 
-        var requestBody = new ClassPathResource("request/question/create-question/200-ok.json").getInputStream().readAllBytes();
+        var requestBody = new ClassPathResource("request/question/create-question/200-ok.json")
+                .getInputStream().readAllBytes();
         mockMvc.perform(post("/questions/create-question")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(requestBody)
