@@ -7,10 +7,8 @@ import javax.persistence.Id;
 import static javax.persistence.GenerationType.IDENTITY;
 
 /**
- * 
- *
- * @since 0.1 2022-03-26 11:04 AM
  * @author liucheng
+ * @since 0.1 2022-03-26 11:04 AM
  **/
 @Entity
 public class Question {
@@ -51,11 +49,7 @@ public class Question {
 
     @Override
     public String toString() {
-        return "Question{" +
-                "id='" + id + '\'' +
-                ", questionerId='" + questionerId + '\'' +
-                ", title='" + title + '\'' +
-                ", detail='" + detail + '\'' +
-                '}';
+        return "Question{" + "id='" + id + '\'' + ", questionerId='" + questionerId + '\'' + ", title='"
+                + title + '\'' + ", detail='" + detail + '\'' + '}';
     }
 }
