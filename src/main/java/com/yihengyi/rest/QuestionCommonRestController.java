@@ -2,7 +2,6 @@ package com.yihengyi.rest;
 
 import com.yihengyi.question.domain.application.QuestionApplicationService;
 import com.yihengyi.question.domain.application.command.CreateQuestionCommand;
-import com.yihengyi.question.domain.application.result.QuestionCreatedResult;
 import com.yihengyi.rest.request.CreateQuestionRequest;
 import com.yihengyi.rest.response.QuestionCreatedResponse;
 import org.springframework.web.bind.annotation.PostMapping;
